@@ -13,11 +13,11 @@ const wordArray = [
     },
     {
         'word': 'listen',
-        'hint': 'To pay attention to and make an effort to hear what someone is saying.'
+        'hint': 'To pay attention to.'
     },
     {
         'word': 'bright',
-        'hint': 'Having a lot of light; shining strongly.'
+        'hint': 'Having a lot of light.'
     },
     {
         'word': 'delicious',
@@ -29,7 +29,7 @@ const wordArray = [
     },
     {
         'word': 'sleep',
-        'hint': 'A natural state of rest for the body and mind.'
+        'hint': 'A natural state of rest.'
     },
     {
         'word': 'kind',
@@ -45,11 +45,11 @@ const wordArray = [
     },
     {
         'word': 'jump',
-        'hint': 'To push yourself off the ground using your legs and feet.'
+        'hint': 'To push yourself off the ground.'
     },
     {
         'word': 'strong',
-        'hint': 'Having the power to move heavy weights or perform physically demanding tasks.'
+        'hint': 'Having the power to move heavy weights.'
     },
     {
         'word': 'sing',
@@ -93,11 +93,11 @@ const wordArray = [
     },
     {
         'word': 'dream',
-        'hint': 'A succession of images, ideas, emotions, and sensations that occur involuntarily in the mind during certain stages of sleep.'
+        'hint': 'Happens during sleep.'
     },
     {
         'word': 'learn',
-        'hint': 'To acquire knowledge or a skill through study, experience, or teaching.'
+        'hint': 'To acquire knowledge.'
     },
     {
         'word': 'playful',

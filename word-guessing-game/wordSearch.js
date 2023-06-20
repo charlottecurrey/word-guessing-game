@@ -29,15 +29,20 @@ function generateRandomWord() {
   }
 }
 
+const correctWordElement = document.querySelector('.correct-word');
+
 
 function updateTimer() {
   const timerElement = document.querySelector('.timer');
 
-  if (timer === 0 && !wordGenerated) {
+  if (timer <= 0 && !wordGenerated) {
     console.log('Time has run out!');
-    remainingGuesses = maxGuesses; // Reset remaining guesses for the next round
+    remainingGuesses = maxGuesses; 
     clearInterval(timerInterval);
     timerRunning = false;
+
+    // Display the correct word
+    correctWordElement.textContent = `Correct Word: ${currentWord.word}`;
 
     timerElement.textContent = 'Your time has run out. Reset the game';
   } else if (timer > 0) {
@@ -145,7 +150,7 @@ function checkGuess() {
 
 function showWinMessage() {
   const winMessage = document.querySelector('.win-message');
-  winMessage.textContent = 'You are a Winner!';
+  winMessage.textContent = 'You are a Winner! Press Reset Game';
 
   setTimeout(() => {
     winMessage.textContent = '';
@@ -174,7 +179,8 @@ function resetGame() {
   
   // Clear the content of the win message
   winMessage.textContent = ''; 
-
+  correctWordElement.textContent = '';
+  
   clearInterval(timerInterval); 
   timerRunning = false; 
   timer = 20;
