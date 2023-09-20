@@ -1,5 +1,8 @@
+
 {
-  "devDependencies": {
-    "prettier": "2.8.8"
-  }
+    "name": "my-package",
+    "scripts": {
+      "build": "babel src -d lib",
+      "test": "jest"
+    }
 }

@@ -41,10 +41,11 @@ function updateTimer() {
     clearInterval(timerInterval);
     timerRunning = false;
 
+    timerElement.textContent = 'Your time has run out. Reset the game';
     // Display the correct word
     correctWordElement.textContent = `Correct Word: ${currentWord.word}`;
 
-    timerElement.textContent = 'Your time has run out. Reset the game';
+    
   } else if (timer > 0) {
     timerElement.textContent = `Time: ${timer}`;
     timer--;
@@ -113,7 +114,7 @@ function checkGuess() {
   
       score++;
   
-      // Update the score display
+      // Update the score 
       const scoreElement = document.querySelector('.score');
       scoreElement.textContent = `Score: ${score}`;
     }
@@ -180,7 +181,7 @@ function resetGame() {
   // Clear the content of the win message
   winMessage.textContent = ''; 
   correctWordElement.textContent = '';
-  
+
   clearInterval(timerInterval); 
   timerRunning = false; 
   timer = 20;
@@ -188,7 +189,6 @@ function resetGame() {
   updateInstructions();
   generateRandomWord();
 }
-
 
 generateRandomWord();
 
